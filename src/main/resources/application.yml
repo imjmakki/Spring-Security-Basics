@@ -8,5 +8,5 @@ spring:
       ddl-auto: update
   security:
     user:
-      name: root
-      password: root
+      name: admin
+      password: admin
