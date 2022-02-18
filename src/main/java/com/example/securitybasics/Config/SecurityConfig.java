@@ -14,9 +14,9 @@ public class SecurityConfig implements WebMvcConfigurer {
         @Override
         protected void configure(AuthenticationManagerBuilder auth) throws Exception {
             auth.inMemoryAuthentication()
-                    .withUser("user1").password("user1").authorities("user")
+                    .withUser("user1").password("{noop}user1").authorities("user")
                     .and()
-                    .withUser("user2").password("user2").authorities("user");
+                    .withUser("user2").password("{noop}user2").authorities("user");
         }
     }
 }
